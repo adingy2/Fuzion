@@ -707,6 +707,19 @@ const std::map<int, PaintNames_t> itemSkins = {
 		{ 917, { "#PaintKit_cu_awp_wildfire_Tag", "cu_awp_wildfire" } },
 		{ 918, { "#PaintKit_cu_glock_hero_Tag", "cu_glock_hero" } },
 		{ 919, { "#PaintKit_gs_famas_legacy_gold_Tag", "gs_famas_legacy_gold" } },
+	
+		/* Shattered Web */
+		{ 885, { "#PaintKit_gs_ak47_nibbler_Tag", "gs_ak47_nibbler"} },
+		{ 886, { "#PaintKit_cu_aug_whitefang_Tag", "cu_aug_whitefang"} },
+		{ 887, { "#PaintKit_cu_awp_virus_Tag", "cu_awp_virus"} },
+		{ 889, { "#PaintKit_gs_tec9_decimator_Tag", "gs_tec9_decimator"} },
+		{ 897, { "#PaintKit_cu_sg553_reactor_Tag", "cu_sg553_reactor"} },
+		{ 898, { "#PaintKit_gs_mac10_stalker_Tag", "gs_mac10_stalker"} },
+		{ 899, { "#PaintKit_cu_ssg08_tickler_Tag", "cu_ssg08_tickler" } },
+	
+		/* St. Marc*/
+		
+	
 
 		/* Gloves */
 		{ 10006, { "#PaintKit_bloodhound_black_silver_tag", "bloodhound_black_silver" } },
