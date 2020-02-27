@@ -1776,7 +1776,11 @@ const std::map<ItemDefinitionIndex, DefItem_t> ItemDefinitionIndexMap = {
 		{ ItemDefinitionIndex::WEAPON_FIREBOMB,             { "#SFUI_WPNHUD_FIREBOMB", "weapon_firebomb", "models/weapons/v_eq_molotov.mdl", "inferno"} },
 		{ ItemDefinitionIndex::WEAPON_DIVERSION,            { "#SFUI_WPNHUD_Diversion", "weapon_diversion", "models/weapons/v_eq_decoy.mdl", "decoy"} },
 		{ ItemDefinitionIndex::WEAPON_FRAG_GRENADE,         { "#SFUI_WPNHUD_frag_Grenade", "weapon_frag_grenade", "models/weapons/v_eq_fraggrenade.mdl", "hegrenade"} },
-		{ ItemDefinitionIndex::WEAPON_BUMPMINE, 			{ "#SFUI_WPNHUD_BUMPMINE", "weapon_bumpmine", "models/weapons/v_eq_fraggrenade.mdl"} }
+		{ ItemDefinitionIndex::WEAPON_BUMPMINE, 			{ "#SFUI_WPNHUD_BUMPMINE", "weapon_bumpmine", "models/weapons/v_eq_fraggrenade.mdl"} },
+		{ ItemDefinitionIndex::WEAPON_KNIFE_CORD,           { "#SFUI_WPNHUD_knife_cord", "weapon_knife_cord", "models/weapons/v_knife_cord.mdl", "knife_cord" } },
+       		{ ItemDefinitionIndex::WEAPON_KNIFE_CANIS,          { "#SFUI_WPNHUD_knife_canis", "weapon_knife_canis", "models/weapons/v_knife_canis.mdl", "knife_canis" } },
+        	{ ItemDefinitionIndex::WEAPON_KNIFE_OUTDOOR,        { "#SFUI_WPNHUD_knife_outdoor", "weapon_knife_outdoor", "models/weapons/v_knife_outdoor.mdl", "knife_outdoor" } },
+        	{ ItemDefinitionIndex::WEAPON_KNIFE_SKELETON,       { "#SFUI_WPNHUD_knife_skeleton", "weapon_knife_skeleton", "models/weapons/v_knife_skeleton.mdl", "knife_skeleton" } },
 };
 
 #define FL_ONGROUND				(1<<0)	// At rest / on the ground
