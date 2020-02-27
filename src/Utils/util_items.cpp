@@ -66,7 +66,7 @@ namespace Util
 			{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_GYPSY_JACKKNIFE).entityName,	i::WEAPON_KNIFE_GYPSY_JACKKNIFE },
 			{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_STILETTO).entityName,		i::WEAPON_KNIFE_STILETTO },
 			{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_WIDOWMAKER).entityName,		i::WEAPON_KNIFE_WIDOWMAKER },
-			{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_CSS).entityName,		i::WEAPON_KNIFE_CSS },
+			{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_CSS).entityName,			i::WEAPON_KNIFE_CSS },
 			{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_GHOST).entityName,			i::WEAPON_KNIFE_GHOST },
 			//{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFEGG).entityName,			i::WEAPON_KNIFEGG },
 			{ ItemDefinitionIndexMap.at(i::GLOVE_STUDDED_BLOODHOUND).entityName, 		i::GLOVE_STUDDED_BLOODHOUND},
@@ -77,6 +77,10 @@ namespace Util
 			{ ItemDefinitionIndexMap.at(i::GLOVE_LEATHER_WRAP).entityName,			i::GLOVE_LEATHER_WRAP},
 			{ ItemDefinitionIndexMap.at(i::GLOVE_MOTORCYCLE).entityName,			i::GLOVE_MOTORCYCLE},
 			{ ItemDefinitionIndexMap.at(i::GLOVE_SPECIALIST).entityName,			i::GLOVE_SPECIALIST},
+			{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_CORD).entityName,           	i::WEAPON_KNIFE_CORD },
+			{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_CANIS).entityName,         		i::WEAPON_KNIFE_CANIS },
+        		{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_OUTDOOR).entityName,        	i::WEAPON_KNIFE_OUTDOOR },
+        		{ ItemDefinitionIndexMap.at(i::WEAPON_KNIFE_SKELETON).entityName,       	i::WEAPON_KNIFE_SKELETON },
 
 		};  // ItemNames
 
@@ -149,6 +153,10 @@ namespace Util
 				case ItemDefinitionIndex::WEAPON_KNIFE_CSS:
 				case ItemDefinitionIndex::WEAPON_KNIFE_GHOST:
 				//case ItemDefinitionIndex::WEAPON_KNIFEGG:
+				case ItemDefinitionIndex::WEAPON_KNIFE_CORD:
+				case ItemDefinitionIndex::WEAPON_KNIFE_CANIS:
+        			case ItemDefinitionIndex::WEAPON_KNIFE_OUTDOOR:
+        			case ItemDefinitionIndex::WEAPON_KNIFE_SKELETON:
 					return true;
 				default:
 					return false;
