@@ -41,6 +41,10 @@ std::unordered_map<ItemDefinitionIndex, AttribItem_t, Util::IntHash<ItemDefiniti
 		{ ItemDefinitionIndex::WEAPON_KNIFE_GHOST, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
 		//{ ItemDefinitionIndex::WEAPON_KNIFEGG, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
 		{ ItemDefinitionIndex::WEAPON_USP_SILENCER, { ItemDefinitionIndex::INVALID, 2, 0.0005f, -1, -1, -1, ""} },
+		{ ItemDefinitionIndex::WEAPON_KNIFE_CORD, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
+        	{ ItemDefinitionIndex::WEAPON_KNIFE_CANIS, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
+        	{ ItemDefinitionIndex::WEAPON_KNIFE_OUTDOOR, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
+        	{ ItemDefinitionIndex::WEAPON_KNIFE_SKELETON, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
 };
 
 std::unordered_map<ItemDefinitionIndex, AttribItem_t, Util::IntHash<ItemDefinitionIndex>> Settings::Skinchanger::skinsT = {
@@ -69,6 +73,10 @@ std::unordered_map<ItemDefinitionIndex, AttribItem_t, Util::IntHash<ItemDefiniti
 		{ ItemDefinitionIndex::WEAPON_KNIFE_CSS, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
 		{ ItemDefinitionIndex::WEAPON_KNIFE_GHOST, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
 		//{ ItemDefinitionIndex::WEAPON_KNIFEGG, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
+		{ ItemDefinitionIndex::WEAPON_KNIFE_CORD, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
+        	{ ItemDefinitionIndex::WEAPON_KNIFE_CANIS, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
+		{ ItemDefinitionIndex::WEAPON_KNIFE_OUTDOOR, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
+        	{ ItemDefinitionIndex::WEAPON_KNIFE_SKELETON, { ItemDefinitionIndex::INVALID, 417, 0.0005f, -1, -1, -1, ""} },
 };
 
 std::unordered_map<std::string, std::string> killIcons = {};
@@ -462,7 +470,7 @@ void SkinChanger::SetViewModelSequence(const CRecvProxyData *pDataConst, void *p
 						m_nSequence--;
 				}
 			}
-			else if (szModel == "models/weapons/v_knife_ursus.mdl")
+			else if ((szModel == "models/weapons/v_knife_ursus.mdl" || szModel == "models/weapons/v_knife_cord.mdl" || szModel == "models/weapons/v_knife_canis.mdl" || szModel == "models/weapons/v_knife_outdoor.mdl" || szModel == "models/weapons/v_knife_skeleton.mdl"))
 			{
 				// Fix animations for the Ursus Knife.
 				switch (m_nSequence)
